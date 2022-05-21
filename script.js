@@ -28,7 +28,7 @@ async function initialize() {
     let status = document.querySelector('.init_status')
     status.innerHTML = 'Loading Model .... <span class="fa fa-spinner fa-spin"></span>'
 
-    model = await tf.loadLayersModel('http://192.168.1.5:8080/major project app/tensorflowjs-model/model.json'); 
+    model = await tf.loadLayersModel('./major project app/tensorflowjs-model/model.json'); 
     console.log(model);   
     status.innerHTML = 'Model Loaded Successfully  <span class="fa fa-check"></span>'
 }
